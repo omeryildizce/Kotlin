@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TarifFragment">
+
+
+    <ImageView
+        android:id="@+id/yemekGorseli"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_margin="10dp"
+        android:onClick="gorselSec"
+        android:src="@drawable/yemek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yemekIsmiText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Yemek ismi giriniz"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/yemekGorseli"
+        app:layout_constraintStart_toStartOf="@+id/yemekGorseli"
+        app:layout_constraintTop_toBottomOf="@+id/yemekGorseli" />
+
+    <EditText
+        android:id="@+id/yemekMalzemeText"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:hint="Yemek malzemelerini giriniz"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/yemekIsmiText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/yemekIsmiText"
+        app:layout_constraintTop_toBottomOf="@+id/yemekIsmiText"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <Button
+        android:id="@+id/yemekKaydet"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="kaydet"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/yemekMalzemeText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/yemekMalzemeText"
+        app:layout_constraintTop_toBottomOf="@+id/yemekMalzemeText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

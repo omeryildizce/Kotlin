@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
   */
             //  veriTabani.execSQL("delete from urunler where id = 6")
             //  veriTabani.execSQL("update urunler set fiyat = 250 where id = 1")
-            
+
             val cursor = veriTabani.rawQuery("select * from urunler ", null)
             //  val cursor = veriTabani.rawQuery("select * from urunler where isim = 'Bere'", null)
             //  val cursor = veriTabani.rawQuery("select * from urunler where id = 4", null)
